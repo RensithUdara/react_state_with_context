@@ -3,6 +3,7 @@ import './App.css';
 import Section1 from './components/Section1';
 import Section2 from './components/Section2';
 import { useState } from 'react';
+import { ThemeContext } from './ThemeContext';
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -22,9 +23,12 @@ function App() {
       {/* <Section1 theme={theme}/>
       <Section2 theme={theme}/> */}
 
-      <Section1 />
-      <Section2 />
-      
+      <ThemeContext.Provider value={theme}>
+        <Section1 />
+        <Section2 />
+      </ThemeContext.Provider>
+
+
     </div>
   );
 }

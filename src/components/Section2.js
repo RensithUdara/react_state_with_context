@@ -1,4 +1,9 @@
-function Section2({ theme }) {
+import { useContext } from "react";
+import { ThemeContext } from "../ThemeContext";
+
+function Section2() {
+    const theme = useContext(ThemeContext);
+
     return (
         <div style={{
             backgroundColor: theme === "dark" ? "#1e293b" : "white",
