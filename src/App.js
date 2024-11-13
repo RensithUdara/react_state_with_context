@@ -25,7 +25,7 @@ function App() {
 
       <ThemeContext.Provider value={theme}>
         <Section1 />
-        <Section2 />
+        <Section2 onClick = {handleClick}/>
       </ThemeContext.Provider>
 
 
