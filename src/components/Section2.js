@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { ThemeContext } from "../ThemeContext";
 
 function Section2({ onClick }) {
-    const theme = useContext(ThemeContext);
+    const {theme} = useContext(ThemeContext);
 
     return (
         <div style={{

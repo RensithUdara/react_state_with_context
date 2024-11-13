@@ -18,17 +18,15 @@ function App() {
 
   return (
     <div className='app'>
-      <button onClick={handleClick}>Toogle Mode</button>
+      <button onClick={handleClick}>Toggle Mode</button>
 
       {/* <Section1 theme={theme}/>
       <Section2 theme={theme}/> */}
 
-      <ThemeContext.Provider value={theme}>
+      <ThemeContext.Provider value={{ theme: theme, toggleTheme: handleClick }}>
         <Section1 />
-        <Section2 onClick = {handleClick}/>
+        <Section2 onClick={handleClick} />
       </ThemeContext.Provider>
-
-
     </div>
   );
 }

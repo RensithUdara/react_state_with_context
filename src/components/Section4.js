@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { ThemeContext } from "../ThemeContext";
 
 function Section4() {
-    const theme = useContext(ThemeContext);
+    const {theme , toggleTheme} = useContext(ThemeContext);
 
     return (
         <div style={{
@@ -10,6 +10,9 @@ function Section4() {
             color: theme === "dark" ? "white" : "#1e293b"
         }}>
             <h2>Section 4</h2>
+            <button onClick={() => {
+                toggleTheme();
+            }}>Section 4 Toggle Theme Button</button>
         </div>
     );
 }
