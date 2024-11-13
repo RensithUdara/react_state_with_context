@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { ThemeContext } from "../ThemeContext";
 
 function Section4() {
-    const {theme , toggleTheme} = useContext(ThemeContext);
+    const {theme , toggleTheme} = useTheme();
 
     return (
         <div style={{

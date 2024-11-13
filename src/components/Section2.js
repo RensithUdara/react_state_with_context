@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import { ThemeContext } from "../ThemeContext";
+import { ThemeContext, useTheme } from "../ThemeContext";
 
 function Section2({ onClick }) {
-    const {theme} = useContext(ThemeContext);
+    const {theme , toggleTheme} = useTheme();
 
     return (
         <div style={{
