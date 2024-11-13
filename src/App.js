@@ -18,8 +18,13 @@ function App() {
   return (
     <div className='app'>
       <button onClick={handleClick}>Toogle Mode</button>
-      <Section1 theme={theme}/>
-      <Section2 theme={theme}/>
+
+      {/* <Section1 theme={theme}/>
+      <Section2 theme={theme}/> */}
+
+      <Section1 />
+      <Section2 />
+      
     </div>
   );
 }
