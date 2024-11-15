@@ -6,7 +6,7 @@ function Section4() {
 
     return (
         <div style={{
-            backgroundColor: theme === "dark" ? "#1e293b" : "white",
+            backgroundColor: theme === "dark" ? "#1e293b" : "grey",
             color: theme === "dark" ? "white" : "#1e293b"
         }}>
             <h2>Section 4</h2>
